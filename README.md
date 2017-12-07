@@ -16,3 +16,4 @@
 
 推荐使用 `HTML 5`, `CSS 3`, `Flex 布局`，相关学习资料，在社团群里已经分享。
 
+![2048 第一周](https://raw.githubusercontent.com/TJNU-iOS-Club/2048Web/master/Images/week1.png)
