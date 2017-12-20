@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <title>2048 - 2</title>
+    <style>
+        html,
+        body {
+            background-color: rgb(187, 174, 159);
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .split-view {
+            display: flex;
+
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .split-item {
+            height: 100%;
+        }
+
+        .left {
+            width: calc(100vw - 100vh);
+            background-color: #907965;
+        }
+
+        .right {
+            width: 100vh;
+        }
+
+        .indicator {
+            width: 100%;
+            color: #FFF;
+            font-size: 15vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .actions {
+            width: 100%;
+            display: flex;
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+        }
+
+        .action-button {
+            width: 20vh;
+            height: 20vh;
+            line-height: 20vh;
+            font-size: 10vh;
+            text-align: center;
+            color: #FFF;
+            background-color: rgb(187, 174, 159);
+            border-radius: 10px;
+
+            cursor: pointer;
+        }
+
+        .container {
+            width: 90vh;
+            height: 90vh;
+            margin: 5vh;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            width: 100%;
+            /* Keng */
+            height: 100%;
+            /* Keng */
+            flex-grow: 1;
+
+            display: flex;
+        }
+
+        .item {
+            height: 100%;
+            flex-grow: 1;
+
+            display: flex;
+            /* 垂直居中 */
+            align-items: center;
+            /* 水平居中 */
+            justify-content: center;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .box {
+            width: 95%;
+            height: 95%;
+            border-radius: 5%;
+            background-color: #f0e6dd;
+            color: #776e65;
+            text-align: center;
+            font-size: 15vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="split-view">
+        <div class="split-item left">
+            <p class="indicator"></p>
+            <div class="actions">
+                <div class="action-button add-button">+</div>
+                <div class="action-button reduce-button">-</div>
+            </div>
+        </div>
+        <div class="split-item right">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/lib/jquery.min.js"></script>
+<script src="./js/app.js"></script>
+
+</html>
