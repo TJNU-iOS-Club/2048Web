@@ -16,13 +16,13 @@
 
 推荐使用 `HTML 5`, `CSS 3`, `Flex 布局`，相关学习资料，在社团群里已经分享。
 
-![2048 第一周](https://raw.githubusercontent.com/TJNU-iOS-Club/2048Web/master/Images/week1.png)
+![2048 第一周](https://raw.githubusercontent.com/TJNU-iOS-Club/2048Web/master/HawkinsZhao/etc/Images/week1.png)
 
 ## 第二周 JavaScript 的基本运用
 
 本周我们的目标是在上周基础上，增加一些基于 **JavaScript** 实现的动态效果，效果如下图所示：
 
-![第二周](https://raw.githubusercontent.com/TJNU-iOS-Club/2048Web/master/Images/week2.gif)
+![第二周](https://raw.githubusercontent.com/TJNU-iOS-Club/2048Web/master/HawkinsZhao/etc/Images/week2.gif)
 
 其中需要实现：
 

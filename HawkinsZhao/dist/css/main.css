@@ -1,0 +1,144 @@
+html,
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: #bbae9e;
+    overflow: hidden;
+}
+
+.split-view {
+    display: flex;
+
+    width: 100%;
+}
+
+.split-view > .left {
+    width: calc(100vw - 100vh);
+    height: 100vh;
+
+    background: #917966;
+}
+
+.split-view > .left > .title {
+    width: 100%;
+    margin: 0;
+
+    text-align: center;
+
+    color: #fff;
+
+    font-family: 'Lobster', cursive;
+    font-size: 10vh;
+}
+
+.split-view > .left > .restart-button {
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+
+    cursor: pointer;
+    transition: all 300ms linear;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 15px;
+    background-color: #bbae9e;
+
+    font-family: 'Lobster', cursive;
+    font-size: 6vh;
+    line-height: 10vh;
+}
+
+.split-view > .left > .restart-button:hover {
+    background-color: #dbcebe;
+}
+
+.split-view > .right {
+    width: 90vh;
+    height: 90vh;
+    position: relative;
+    margin: 5vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+.item {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 300ms;
+    text-align: center;
+
+    color: #786e65;
+    border-radius: 5px;
+    /*f0e6dc*/
+    background-color: #CCC0B2;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9vh;
+    font-weight: 700;
+    line-height: 19vh;
+}
+
+@media all and (orientation: portrait) {
+    .split-view {
+        flex-direction: column;
+    }
+
+    .split-view > .left {
+        width: 100vw;
+        height: calc(100vh - 110vw);
+    }
+
+    .split-view > .right {
+        width: 90vw;
+        height: 90vw;
+        margin: 10vw 5vw;
+
+    }
+
+    .item {
+        font-size: 9vw;
+        line-height: 19vw;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .split-view > .left {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .split-view > .left > .title {
+        width: 50vw;
+        font-size: 10vw;
+        margin: 0;
+    }
+
+    .split-view > .left > .restart-button {
+        width: 40vw;
+        height: 10vw;
+        font-size: 6vw;
+        line-height: 10vw;
+    }
+}

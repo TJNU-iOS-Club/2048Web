@@ -1,0 +1,55 @@
+.level-2
+{
+    background-color: #f0e6dc;
+}
+
+.level-4
+{
+    background-color: #ecdfc9;
+}
+
+.level-8 {
+    background-color: #F2B078;
+    color: #ffffff;
+}
+
+.level-16 {
+    background-color: #F89463;
+    color: #ffffff;
+}
+
+.level-32 {
+    background-color: #F37D5C;
+    color: #ffffff;
+}
+
+.level-64 {
+    background-color: #E55B35;
+    color: #ffffff;
+}
+
+.level-128 {
+    background-color: #EDCF71;
+    color: #ffffff;
+}
+
+.level-256 {
+    background-color: #EBD34C;
+    color: #ffffff;
+}
+
+.level-512 {
+    background-color: #ECC84F;
+    color: #ffffff;
+}
+
+.level-1024 {
+    background-color: #ECC43D;
+    color: #ffffff;
+    font-size: 7vh;
+}
+
+.level-2048 {
+    background-color: #EDC22E;
+    color: #ffffff;
+}
